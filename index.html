@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素实现小涟漪</title>
+    <style>
+
+        .sub{
+            position: absolute;
+            height:80px;
+            width:200px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .anim{
+            width: 150px;
+            text-align: center;
+            margin: 30px auto 0;
+            padding: 14px 15px;
+            position: relative;
+            display: block;
+            border: 2px solid goldenrod;
+            overflow: hidden;
+
+        }
+        .anim:after{
+            content: "";
+            position: absolute;
+            display: block;
+            background: none repeat scroll 0 0 indianred;
+            border-radius: 90%;
+            width: 0px;
+            height: 0px;
+            left:50%;
+            top: 50%;
+            z-index: -1;
+
+
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+
+            -webkit-transition: all 2s cubic-bezier(1,1,1,1) 0s;
+            -moz-transition: all 2s cubic-bezier(1,1,1,1) 0s;
+            -o-transition: all 2s cubic-bezier(1,1,1,1) 0s;
+            transition: all 0.3s cubic-bezier(1,1,1,1) 0s;
+        }
+        .anim:hover:after{
+            height: 450%;
+            width: 110%;
+            opacity: 1;
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+       <div class="sub">
+           <span class="anim">鼠标移过来</span>
+       </div>
+</body>
+</html>
