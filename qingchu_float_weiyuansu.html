@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动_用的伪元素</title>
+    <style>
+        .left{
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 200px;
+        }
+        .parent:after{  /*为要清除浮动的元素的父元素加伪元素*/
+            content: '';
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+
+
+
+        .bott{
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="left">浮动</div>
+</div>
+
+<div class="bott"></div>
+<div style="height: 100px;width: 100px;background-color: aqua"></div>
+<p>我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！</p>
+</body>
+</html>
