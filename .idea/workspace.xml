@@ -77,8 +77,8 @@
       <file leaf-file-name="CSS3_animation_gradient.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CSS3_animation_gradient.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="374">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -264,12 +264,12 @@
       <workItem from="1491462345194" duration="32000" />
       <workItem from="1491785643437" duration="2848000" />
       <workItem from="1491895572825" duration="4325000" />
-      <workItem from="1491963422676" duration="3583000" />
+      <workItem from="1491963422676" duration="3627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20095000" />
+    <option name="totallyTimeSpent" value="20139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="760" y="0" width="1924" height="1046" extended-state="0" />
@@ -625,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS3_animation_gradient.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="374">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>
