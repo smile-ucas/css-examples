@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现hover飘红</title>
+    <style>
+        div{
+            /*margin: 0 auto;*/
+            /*height: 100px;*/
+        }
+        a{
+            display: inline-block;
+        /*行内元素不能设置宽高  a是行内元素*/
+            height:50px;
+            width: 50px;
+            margin: 25px;
+            /*间隔50px*/
+
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
+<div>
+    <a>1</a>
+    <a>2</a>
+    <a>3</a>
+    <a>4</a>
+</div>
+<script>
+//    hover(enter,leave);
+//    $(function(){
+//        $(a).hover(
+//            function () {
+//                $(this).style="background-color:red";
+//            },
+//            function () {
+//
+//            }
+//        );
+//    });
+
+    $(function () {
+       $(a).onmouseover(function () {
+           $(this).style="background-color:red";
+       }) .mouseout(function () {
+
+       })
+    });
+
+</script>
+
+</body>
+</html>

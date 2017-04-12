@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变动画</title>
+    <style>
+        html,body{
+            height: 550px;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .child{
+            height: 100px;
+            width:500px;
+            border: 1px solid black;
+
+            background-image: linear-gradient(left,red 100px,yellow 200px);
+
+            /*linear-gradient:(90deg.red 0%,  blue 100%);*/
+            /*animation: gradientChange 2s infinite;*/
+
+        }
+        /*@keyframes gradientChange {*/
+            /*100%{*/
+                /*background: linear-gradient(90deg,blue 0%,yellow 100%);*/
+            /*}*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child"></div>
+</div>
+</body>
+</html>
