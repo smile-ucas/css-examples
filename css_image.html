@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css实现各种图形</title>
+    <style>
+        html,body{
+            height:100%;
+        }
+        .text_center{
+            text-align: center;
+        }
+        .parent{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:100%;
+        }
+        .contain_circle{
+            height:100px;
+            width:100px;
+            line-height: 100px;
+            border-radius: 50px;
+
+            border: 1px #888888 solid;
+        }
+        .contain_ellipse{
+            height:200px;
+            width:100px;
+            line-height: 200px;
+            border-radius: 50px;
+
+            border: 1px #888888 solid;
+        }
+        .contain_parallelogram{
+            width: 150px;
+            height: 100px;
+            margin-left:20px;
+            -webkit-transform: skew(20deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+
+            border: 1px #888888 solid;
+
+        }
+        .contain_trapezoid{
+            border-bottom: 100px solid blanchedalmond;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 0;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="contain_circle text_center">圆</div>
+    <div class="contain_ellipse text_center">椭圆</div>
+    <div class="contain_parallelogram text_center">平行四边形</div>
+    <div class="contain_trapezoid text_center"></div>
+</div>
+
+</body>
+</html>
