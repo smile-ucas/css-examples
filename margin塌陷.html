@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            padding: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div style="margin: 20px 0;background-color: antiquewhite;height: 30px;width: 30px"></div>
+<div style="margin: 30px 0;background-color: aqua;height: 30px;width: 30px"></div>
+<p>1.上面div的margin-bottom为20px，底下div的margin-top为30px,兄弟之间发生<strong>塌陷：</strong>两个div上下间隔取大值:30px</p>
+
+<div style="height: 100px;width: 100px;background-color: antiquewhite;margin: 30px 0">
+    <div style="height: 50px;width: 50px;background-color: aqua;margin: 50px 0"></div>
+</div>
+<p>2.父元素没有设padding-top和border-top,即为0，子元素的margin-top会和父元素的margin-top合并，margin-top最终取最大值，子元素紧贴父元素上边界</p>
+
+<div style="height: 100px;width: 100px;background-color: antiquewhite;padding-top: 3px;margin: 30px 0">
+    <div style="height: 50px;width: 50px;background-color: aqua;margin: 40px 0"></div>
+</div>
+<p>3.父元素设定padding-top,margin-top取父元素的</p>
+
+<div style="height: 100px;width: 100px;background-color: antiquewhite;border-top: 3px solid;margin: 30px 0">
+    <div style="height: 50px;width: 50px;background-color: aqua;margin: 40px 0"></div>
+</div>
+<p>4.父元素设定border-top,margin-top取父元素的</p>
+<br/><br/><br/><br/><br/><br/><br/>
+
+
+</body>
+</html>
