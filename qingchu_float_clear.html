@@ -13,15 +13,14 @@
             line-height: 200px;
         }
         .clear{
-            both:clear;
-            height: 200px;
+            clear: both;
+            /*或者写clear:left,这个div的上一个div（脱流）左浮动，这个div不想被替上去，就可以这么写*/
         }
     </style>
 </head>
 <body>
 <div class="left">浮动</div>
-<div class="clear"></div>
-<div style="height: 100px;width: 100px;background-color: aqua"></div>
+<div class="clear" style="height: 100px;width: 100px;background-color: aqua"></div>
 <p>我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！我是段落！</p>
 </body>
 </html>
